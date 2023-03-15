@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Discount Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./project3.css">
+</head>
+<body>
+	<div class="container">
+		<h1 align="center">Discount Calculator</h1>
+		<form>
+			<label for="bill-amount">Bill Amount:</label>
+			<input type="number" id="bill-amount" placeholder="Enter bill amount">
+
+			<label for="discount-percentage">Discount Percentage %</label>
+			<select id="discount-percentage">
+				<option value="0">0%</option>
+				<option value="5">5%</option>
+				<option value="10">10%</option>
+				<option value="15">15%</option>
+				<option value="20">20%</option>
+			</select>
+
+			<label for="discount-amount">Discount Amount:</label>
+			<input type="number" id="discount-amount" disabled>
+
+			<label for="final-amount">Final Amount:</label>
+			<input type="number" id="final-amount" disabled>
+
+			<button type="button" id="calculate-btn">Calculate</button>
+			<button type="button" id="reset-btn">Reset</button>
+		</form>
+	</div>
+
+	<script src="./project3.js"></script>
+</body>
+</html>

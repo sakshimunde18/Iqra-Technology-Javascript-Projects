@@ -1,0 +1,55 @@
+div {
+    align: center;
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid rgb(219, 15, 222);
+    padding: 50px;
+    margin: 20px;
+  }
+.container {
+    margin-left: 30%0;
+	margin-left: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+h1 {
+	margin-bottom: 2rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	margin-top: 1rem;
+}
+
+input[type="number"], select {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 0.5rem;
+}
+
+input[type="number"][disabled], select[disabled] {
+	background-color: #f0f0f0;
+	cursor: not-allowed;
+}
+
+button {
+	padding: 0.5rem 1rem;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+button:hover {
+	background-color: #0062cc;
+}
