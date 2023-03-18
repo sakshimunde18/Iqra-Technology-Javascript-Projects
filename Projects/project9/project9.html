@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var userChoice = prompt("Choose rock/paper/scissors:-");
+    var computerChoice = Math.random();
+    if (computerChoice < 0.34) {
+        computerChoice = "rock";
+    } else if(computerChoice <= 0.67) {
+        computerChoice = "paper";
+    } else {
+        computerChoice = "scissors";
+    }
+    var compare = function(choice1, choice2) {
+        if(choice1 === choice2) {
+        return "The result is a tie!";
+    }
+    if(choice1 === "rock") {
+        if(choice2 === "scissors") {
+            return "rock wins";
+        } else {
+            return "paper wins";
+        }
+    }
+    if(choice1 === "paper") {
+        if(choice2 === "rock") {
+            return "paper wins";
+        } else {
+            if(choice2 === "scissors") {
+                return "scissors wins";
+        }
+    }
+    if(choice1 === "scissors") {
+        if(choice2 === "rock") {
+            return "rock wins";
+        } else {
+            if(choice2 === "paper") {
+                return "scissors wins";
+            }
+        }
+    }
+    }
+    };
+    console.log("My Choice: " + userChoice);
+    console.log("Computer Choice: " + computerChoice);
+    compare(userChoice, computerChoice);
+  </script>
+</body>
+
+</html>
