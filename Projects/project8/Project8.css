@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+  }
+  
+  input[type="number"] {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: lightgray;
+  }
+  
+  td:first-child {
+    text-align: left;
+  }
+  
