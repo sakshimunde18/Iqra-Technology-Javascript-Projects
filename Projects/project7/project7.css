@@ -1,0 +1,19 @@
+#main_div{
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(227, 14, 195);
+    height: 380px;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(13, 239, 217);
+  }
+  button{
+    border: 2px solid rgb(209, 12, 150);
+background-color: rgb(240, 237, 237);
+    border: 0px solid;
+}
+select{
+    border: 2px solid rgb(209, 12, 150);
+background-color: rgb(240, 237, 237);
+    border: 0px solid;
+}

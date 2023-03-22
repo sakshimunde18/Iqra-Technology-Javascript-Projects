@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        justify-content: center;
+        align-items: center;
+        border: 5px solid rgb(227, 14, 195);
+        height: 180px;
+       width: 220px;
+       padding: 20px;
+    }
+</style>
+<body>
+  <script src="https://kit.fontawesome.com/8485f5956a.js" crossorigin="anonymous"></script>
+  <div id="stars">
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <span><i class="fa-solid fa-star"></i></span>
+    <br>
+    <span><i class="fa-solid fa-star"></i></span> 
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <br>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     <span><i class="fa-solid fa-star"></i></span>
+     </div>
+     <br>
+     <button onclick="changecolor()" id="startbtn">start</button>
+     <button onclick="stop()">stop</button>
+     <button onclick="clearme()">clear</button>
+
+     <script>
+        let stars = document.getElementById("stars").children;
+        let StartBtn=document.getElementById("startbtn");
+        const color=["red","blue","green","voilet","orange","brown"];
+        let i=0;
+        let Interval;
+        function changecolor(){
+            Interval=setInterval(function(){
+          if(i < stars.length){
+            StartBtn.innerHTML="Resume"
+            var randomColor=color[Math.floor(Math.random() * color.length)];
+            stars[i].style.color=randomColor;
+            i++;
+          }
+          else{
+            clearInterval(Interval);
+          }
+            },1000);
+        }
+        function stop(){
+            clearInterval(Interval);
+        }
+        function clearme(){
+            clearInterval(Interval);
+            for(let i=0;i<stars.length;i++){
+                stars[i].style.color="black"
+            }
+            i=0;
+            Startbtn.innerHTML="start"
+        }
+     </script>
+</body>
+
+</html>
