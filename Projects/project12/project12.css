@@ -1,0 +1,92 @@
+body {
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
+
+.fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.input-field input,
+select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productlabel {
+    margin-right: 10%;
+    display: block;
+    width: x;
+    height: y;
+    text-align: right;
+    font-size: large;
+}
+
+.btn {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(25, 25, 88);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 190px;
+}
+
+
+.btn:hover {
+    background-color: white;
+    color: rgb(25, 25, 88);
+    border: 2px solid rgb(25, 25, 88);
+    transition: 0.8s all;
+}
+
+#myTable{
+    border: 1px solid black;
+    padding: 10px ;
+    border-collapse: collapse ;
+}
+th{
+    width: 350px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: start;
+}
+td{
+    width: 350px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: start;
+}
+
+
+#delegates {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./project15.css">
+</head>
+
+<body>
+    <div id="a">
+        <h1>Created By Sakshi Munde</h1>
+        <div>
+            <button class="click" id="btn" onclick="section()">Select Payment Method</button>
+            <div id="section">
+                <input onclick="cradit()" type="radio" name="transaction">
+                <span>Credit/Debit Card</span>
+                <input onclick="upi()" type="radio" name="transaction">
+                <span>UPI number</span>
+                <input onclick="account()" type="radio" name="transaction">
+                <span>Account</span>
+                <hr>
+            </div>
+        </div>
+        <div class="ad">
+            <form id="aee" class="ae">
+                <h2>Account Payment Form</h2>
+                <p id="warning">All fields are required</p>
+                <hr>
+                <input id="accname" class="Ip" type="text" placeholder="Enter Your Name">
+                <input id="accno" class="Ip" type="text" placeholder="Enter Your Account Number">
+                <input id="accno2" class="Ip" type="text" placeholder="Re-enter Your Account Number">
+                <input id="accifsc" class="Ip2" type="text" placeholder="IFSC Code">
+                <input id="accbranch" class="Ip2" type="text" placeholder="Branch Name">
+                <Button onclick="validation1()" id="bt1">Generate CVV</Button>
+                <input class="Ip3" id="acccvv" type="text" placeholder="Enter CVV">
+                <Button onclick="submit1()" id="btnn1">submit</Button>
+            </form>
+            <form id="agg" class="ag">
+                <h2>Credit/Debit Card Form</h2>
+                <p id="warning1">All fields are required</p>
+                <hr>
+                <input id="cardNumber2" class="Ip" type="text" placeholder="Enter Card Number">
+                <input id="cardName2" class="Ip" type="text" placeholder="Enter Name on Card">
+                <button  id="date" class="Ip4"></button>
+                <select  id="valuess">
+                    <option value="">visa</option>
+                    <option value="">Rupay</option>
+                    <option value="">Master</option>
+                    <option value="">Other</option>
+                </select>
+                <Button onclick="validation2()" id="bt2">Generate CVV</Button>
+                <input id="cvv2" class="Ip3" type="text" placeholder="Enter CVV">
+                <Button onclick="submit2()" id="btnn2">submit</Button>
+            </form>
+            <form id="ahh" class="ah">
+                <h2>UPI Payment Form</h2>
+                <p id="warning2">All fields are required</p>
+                <hr>
+                <input id="upino" class="Ip" type="text" placeholder="Enter UPI Number">
+                <input id="upiname" class="Ip" type="text" placeholder="Enter Name">
+                <Button  onClick="validation3()" id="bt3">Generate CVV</Button>
+                <input class="Ip3" id="upicvv" type="text" placeholder="Enter CVV">
+                <Button onclick="submit3()" id="btnn3">submit</Button>
+            </form>
+            
+            <div id="aff" class="af">
+                <h2>List of Saved Details</h2>
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Method Type</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody id="tbody">
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="details">
+        </div>
+    </div>
+    <script src="./project15.js"></script> 
+</body>
+
+</html>
