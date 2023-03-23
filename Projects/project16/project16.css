@@ -1,0 +1,14 @@
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #11e1be;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 300px;
+  }
+  

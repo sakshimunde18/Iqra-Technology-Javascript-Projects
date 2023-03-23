@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate_Form</title>
+    <link rel="stylesheet" href="./project6.css">
+</head>
+
+<body>
+
+    <div id="main_div">
+        <h2>PO Detailed Validation Form</h2>
+        <h3><span class="error"></span></h3>
+
+        <div>
+            <label>Supplier name:</label>
+            <input type="text" id="sname">
+        </div>
+
+        <div>
+            <label>PO Value: </label> <br>
+            <input type="text" id="val">
+        </div>
+
+        <div>
+            <label>Re-enter PO Value: </label>
+            <input type="text" id="val1">
+        </div>
+
+        <div>
+            <label>Paid Amount: </label>
+            <input type="text" id="amount">
+        </div>
+
+        <div>
+            <label for="">Status: </label><br>
+            <input type="text" id="status" placeholder="Fail" disabled>
+        </div>
+
+        <div>
+            <button id="btn1" onclick="getValidation();">Validate</button>
+        </div>
+
+        <div>
+            <button id="btn2" style="display: none">Submit</button>
+        </div>
+
+
+    </div>
+    <div id="main1">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>PO Number</th>
+                    <th>Paid Amount</th>
+                    <th>Success</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="./project6.js"></script>
+
+</html>

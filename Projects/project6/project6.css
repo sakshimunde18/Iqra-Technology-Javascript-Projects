@@ -1,0 +1,60 @@
+#main_div{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 360px;
+    float: left;
+
+}
+input{
+    width: 300px;
+    padding: 7px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+label{
+    margin: 15px;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+#btn1{
+    padding: 7px;
+    margin: 10px;
+    width: 320px;
+    border: 1px solid rgb(10, 202, 236);
+    background-color: rgb(17, 206, 227);
+}
+
+#btn2{
+    padding: 7px;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 320px;
+    border: 1px solid rgb(7, 225, 204);
+    background-color: rgb(8, 235, 231);
+}
+
+#main1{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    margin-right: 350px;
+    margin-top: 5px;
+    width: 400px;
+    float: right;
+}
+th{
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+}
+td{
+    padding: 10px;
+    margin: 5px;
+}
