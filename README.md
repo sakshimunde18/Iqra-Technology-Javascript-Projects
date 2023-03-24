@@ -1,4 +1,4 @@
-## Projects 
+##  Javascript Projects 
 
 [Project : 1  Interactive Image Gallery](https://github.com/sakshimunde18/Iqra_Technology_Projects/tree/main/Projects/project1)<br>
 
